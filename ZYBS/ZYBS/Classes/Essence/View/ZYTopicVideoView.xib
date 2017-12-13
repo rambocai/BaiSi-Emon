@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZYTopicVideoView">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="191"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageBackground" translatesAutoresizingMaskIntoConstraints="NO" id="8vS-1T-RPS" userLabel="占位图片">
+                    <rect key="frame" x="0.0" y="20" width="327" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="AbH-E2-NOS"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dam-po-MFs">
+                    <rect key="frame" x="0.0" y="0.0" width="327" height="191"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Su-BP-cHo">
+                    <rect key="frame" x="128.5" y="60.5" width="71" height="71"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" image="video-play"/>
+                    <state key="highlighted" backgroundImage="playButtonClick"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4343播放" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDA-sz-PmC" userLabel="Play Count Label">
+                    <rect key="frame" x="259" y="0.0" width="68" height="18"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03:20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C9O-Ff-gid" userLabel="Video Time Label">
+                    <rect key="frame" x="286" y="173" width="41" height="18"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8vS-1T-RPS" secondAttribute="trailing" id="0lf-LV-yYE"/>
+                <constraint firstItem="8vS-1T-RPS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1bM-M3-FMY"/>
+                <constraint firstItem="7Su-BP-cHo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EFs-r7-WG1"/>
+                <constraint firstAttribute="trailing" secondItem="dam-po-MFs" secondAttribute="trailing" id="OB7-YR-3Xs"/>
+                <constraint firstItem="8vS-1T-RPS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="S5b-ux-rlo"/>
+                <constraint firstItem="dam-po-MFs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VY8-7T-CcJ"/>
+                <constraint firstAttribute="bottom" secondItem="dam-po-MFs" secondAttribute="bottom" id="WpR-LR-DiZ"/>
+                <constraint firstItem="7Su-BP-cHo" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="eNY-WM-wMU"/>
+                <constraint firstAttribute="trailing" secondItem="jDA-sz-PmC" secondAttribute="trailing" id="gCh-bd-mL5"/>
+                <constraint firstItem="dam-po-MFs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iXt-ac-mXQ"/>
+                <constraint firstAttribute="trailing" secondItem="C9O-Ff-gid" secondAttribute="trailing" id="lO6-hs-2aV"/>
+                <constraint firstItem="jDA-sz-PmC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tD6-dN-Air"/>
+                <constraint firstAttribute="bottom" secondItem="C9O-Ff-gid" secondAttribute="bottom" id="uAz-H8-W35"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="dam-po-MFs" id="Ocs-EN-dIV"/>
+                <outlet property="playCountLabel" destination="jDA-sz-PmC" id="yXh-2v-JBq"/>
+                <outlet property="videoTimeLabel" destination="C9O-Ff-gid" id="w5N-f8-NvQ"/>
+            </connections>
+            <point key="canvasLocation" x="18.5" y="-179.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imageBackground" width="75" height="15"/>
+        <image name="playButtonClick" width="63" height="63"/>
+        <image name="video-play" width="71" height="71"/>
+    </resources>
+</document>

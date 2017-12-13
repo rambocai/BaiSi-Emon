@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZYSeeBigViewController">
+            <connections>
+                <outlet property="saveButton" destination="FMY-9C-ZyM" id="lfc-XW-nZP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jS-fj-jLM" userLabel="返回">
+                    <rect key="frame" x="10" y="40" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="l6Y-1t-6MH"/>
+                        <constraint firstAttribute="height" constant="35" id="uWL-wn-0qt"/>
+                    </constraints>
+                    <state key="normal" image="show_image_back_icon"/>
+                    <connections>
+                        <action selector="back" destination="-1" eventType="touchUpInside" id="zAI-UY-svj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMY-9C-ZyM" userLabel="保存">
+                    <rect key="frame" x="295" y="597" width="70" height="30"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="HjQ-7e-VJt"/>
+                        <constraint firstAttribute="width" constant="70" id="JRx-tA-om4"/>
+                    </constraints>
+                    <state key="normal" title="保存">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="save" destination="-1" eventType="touchUpInside" id="jmg-ws-6Uo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7jS-fj-jLM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="42u-zK-ey6"/>
+                <constraint firstItem="7jS-fj-jLM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="CFd-th-iJq"/>
+                <constraint firstAttribute="bottom" secondItem="FMY-9C-ZyM" secondAttribute="bottom" constant="40" id="eEJ-0D-sB3"/>
+                <constraint firstAttribute="trailing" secondItem="FMY-9C-ZyM" secondAttribute="trailing" constant="10" id="vDS-vS-c7d"/>
+            </constraints>
+            <point key="canvasLocation" x="17" y="-145"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="show_image_back_icon" width="35" height="35"/>
+    </resources>
+</document>
